@@ -60,14 +60,10 @@ CleanSpot is not yet code-signed, so Windows SmartScreen may show a warning on f
 This is expected for unsigned applications. You can verify the file is safe using the VirusTotal link below.
 
 ## Security
+VirusTotal scan: **0/70 — clean** ([view report](https://www.virustotal.com/gui/file/55bc6f1b119bf31aae0df584453a65b115d90c1cc0526a7bec9ceb5d97c3425a))
 
-Every release is scanned before publishing. The current release scored **0 / 70** on VirusTotal — no security vendor flagged it as malicious.
-
-To verify your download, compare its SHA-256 hash with the value listed on the release page:
-
-```powershell
-Get-FileHash "CleanSpot_Setup_v1.9.exe" -Algorithm SHA256
-```
+SHA-256:
+`55bc6f1b119bf31aae0df584453a65b115d90c1cc0526a7bec9ceb5d97c3425a`
 
 ## Usage
 
@@ -86,6 +82,6 @@ CleanSpot performs system-level operations including file deletion and registry 
 
 **CleanSpot** · Power All-in-One
 
-Copyright © 2026 SPooT-q8 · All Rights Reserved
+Copyright © 2026 SPooT · All Rights Reserved
 
 </div>

@@ -8,7 +8,7 @@
 
 Deep-clean junk files · Free up RAM · Fully remove programs · Monitor your hardware in real time
 
-[![Version](https://img.shields.io/badge/version-1.9-00D4FF)]()
+[![Version](https://img.shields.io/badge/version-1.9.1-00D4FF)]()
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0099CC)]()
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F70%20clean-3ECF8E)]()
 

@@ -56,7 +56,7 @@ Switch between dark and light modes anytime. Your preference is remembered.
 
 ## Installation
 
-1. Download `CleanSpot_Setup.exe` from the [Releases page](../../releases/latest)
+1. Download CleanSpot_Setup_v1.9.1.exe` from the [Releases page](../../releases/latest)
 2. Run the installer and follow the steps
 3. Launch CleanSpot from the Start Menu
 
@@ -70,7 +70,7 @@ CleanSpot is not yet code-signed, so Windows SmartScreen may show a warning on f
 This is expected for unsigned applications. You can verify the file is safe using the VirusTotal link below.
 
 ## Security
-VirusTotal scan: **0/70 — clean** ([view report](https://www.virustotal.com/gui/file/55bc6f1b119bf31aae0df584453a65b115d90c1cc0526a7bec9ceb5d97c3425a))
+VirusTotal scan: **0/70 — clean** ([view report](https://www.virustotal.com/gui/file/31565484f6766a698ab08d2cde0913e24f81ede95f867f1e03ddfc3f193f4be5?nocache=1))
 
 SHA-256:
 `55bc6f1b119bf31aae0df584453a65b115d90c1cc0526a7bec9ceb5d97c3425a`

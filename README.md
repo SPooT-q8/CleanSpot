@@ -14,6 +14,12 @@ Deep-clean junk files · Free up RAM · Fully remove programs · Monitor your ha
 
 [**⬇ Download Latest Release**](../../releases/latest)
 
+## Support
+
+CleanSpot is free. If you find it useful, you can support its development:
+
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://paypal.me/رابطك)
+
 </div>
 
 ---

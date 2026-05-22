@@ -20,6 +20,10 @@ CleanSpot is free. If you find it useful, you can support its development:
 
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://www.paypal.com/ncp/payment/RZPR585EB3T38)
 
+<p align="center">
+  <img src="assets/cleanspot431.png" width="80%" alt="CleanSpot Dashboard" />
+</p>
+
 </div>
 
 ---

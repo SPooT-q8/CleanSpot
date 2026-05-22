@@ -18,7 +18,7 @@ Deep-clean junk files · Free up RAM · Fully remove programs · Monitor your ha
 
 CleanSpot is free. If you find it useful, you can support its development:
 
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://paypal.me/رابطك)
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://www.paypal.com/ncp/payment/RZPR585EB3T38)
 
 </div>
 

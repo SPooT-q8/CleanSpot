@@ -8,7 +8,7 @@
 
 Deep-clean junk files · Free up RAM · Fully remove programs · Monitor your hardware in real time
 
-[![Version](https://img.shields.io/badge/version-1.10-00D4FF)]()
+[![Version](https://img.shields.io/badge/version-1.11-00D4FF)]()
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0099CC)]()
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F70%20clean-3ECF8E)]()
 
@@ -21,7 +21,7 @@ CleanSpot is free. If you find it useful, you can support its development:
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://www.paypal.com/ncp/payment/RZPR585EB3T38)
 
 <p align="center">
-  <img src="assets/v1.10.png" width="80%" alt="CleanSpot Dashboard" />
+  <img src="assets/1.1111.png" width="80%" alt="CleanSpot Dashboard" />
 </p>
 
 </div>

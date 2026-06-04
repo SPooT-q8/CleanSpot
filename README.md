@@ -56,7 +56,7 @@ Switch between dark and light modes anytime. Your preference is remembered.
 
 ## Installation
 
-1. Download CleanSpot_Setup_v1.10.exe` from the [Releases page](../../releases/latest)
+1. Download CleanSpot_Setup` from the [Releases page](../../releases/latest)
 2. Run the installer and follow the steps
 3. Launch CleanSpot from the Start Menu
 

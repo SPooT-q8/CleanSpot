@@ -6,80 +6,90 @@
 
 ### Professional All-in-One PC Optimization Tool
 
-Deep-clean junk files · Free up RAM · Fully remove programs · Monitor your hardware in real time
+**Clean your junk · See what's filling your drive · Repair Windows · Fully remove programs**
 
-[![Version](https://img.shields.io/badge/version-1.11-00D4FF)]()
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0099CC)]()
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F70%20clean-3ECF8E)]()
+[![Version](https://img.shields.io/badge/version-2.0-00D4FF?style=for-the-badge)](../../releases/latest)
+[![Platform](https://img.shields.io/badge/Windows-10%20%2F%2011-0099CC?style=for-the-badge&logo=windows)]()
+[![Language](https://img.shields.io/badge/EN%20%2F%20عربي-6E46C8?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/price-Free-3ECF8E?style=for-the-badge)]()
 
-[**⬇ Download Latest Release**](../../releases/latest)
+<br/>
 
-## Support
+[**⬇ &nbsp; Download Latest Release**](../../releases/latest)
 
-CleanSpot is free. If you find it useful, you can support its development:
+<br/>
 
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://www.paypal.com/ncp/payment/RZPR585EB3T38)
-
-<p align="center">
-  <img src="assets/CleanSpot_v2.0_dashboard.png" width="80%" alt="CleanSpot Dashboard" />
-</p>
+<img src="assets/CleanSpot_v2.0_dashboard.png" width="85%" alt="CleanSpot Dashboard" />
 
 </div>
 
 ---
 
-## Overview
+## Why CleanSpot?
 
-CleanSpot is a professional all-in-one PC optimization tool designed for gamers and power users. It deep-cleans junk files across 22 system targets, frees up RAM with one click, fully uninstalls programs including leftover files and registry entries, and provides real-time hardware monitoring.
+Most cleaners just delete temp files and call it a day. CleanSpot goes further — it **shows you what's actually eating your disk**, **repairs a broken Windows install**, and **removes programs down to the last registry key**. One app, six tabs, no subscriptions, no bloat.
 
-## Features
+Built for gamers and power users. Now in **Arabic and English**.
 
-### System Cleaning
-Clean junk and cache files across 22 targets including Windows Temp, browser caches, shader caches, crash dumps, memory dumps, Delivery Optimization files, and more. Scan first to see how much space you can reclaim, then clean only what you select.
+<br/>
 
-### RAM Optimization
-Free up memory instantly with one click. Optional Auto RAM mode monitors usage and automatically cleans memory when it crosses a threshold you choose.
+## ✨ Features
 
-### Deep Uninstaller
-Remove programs completely, not just the main files. The deep uninstall process runs the program's own uninstaller, then removes residual files, AppData folders, Start Menu shortcuts, scheduled tasks, related services, and registry entries.
+| | Tool | What it does |
+|---|------|--------------|
+| 📊 | **Disk Analyzer** &nbsp;`NEW` | A treemap of every folder, a duplicate finder verified with full SHA-256, big-file lists, and one-click cleanup suggestions. |
+| 🧹 | **System Cleaning** | Reclaim space across 21 targets — Windows Temp, browser and shader caches, crash dumps, and more. Scan first, clean only what you pick. |
+| 🗑️ | **Deep Uninstaller** | Removes programs completely — files, AppData, shortcuts, services, scheduled tasks and registry keys. Waits for Steam & Epic to finish. |
+| 🛠️ | **System Repair** | Run SFC and DISM with real progress and real results, plus component-store cleanup to reclaim space from old updates. |
+| ⚡ | **RAM Optimization** | Free memory with one click, or let Auto RAM clean automatically past a threshold you set. |
+| 📈 | **Hardware Monitor** | Live CPU, GPU, RAM and disk usage with clock speeds and temperatures. |
+| 🌐 | **Arabic Interface** &nbsp;`NEW` | Full right-to-left Arabic, switchable anytime. Dark / light themes, remembered between sessions. |
 
-### Hardware Monitoring
-Real-time monitoring of CPU, GPU, RAM, and disk usage, including live clock speeds and temperatures.
+<br/>
 
-### Dark / Light Theme
-Switch between dark and light modes anytime. Your preference is remembered.
+## 🚀 Installation
 
-## System Requirements
-
-- Windows 10 or Windows 11 (64-bit)
-- Administrator privileges (required for system cleaning operations)
-
-## Installation
-
-1. Download CleanSpot_Setup` from the [Releases page](../../releases/latest)
+1. Download **`CleanSpot_Setup_v2.0.exe`** from the [Releases page](../../releases/latest)
 2. Run the installer and follow the steps
 3. Launch CleanSpot from the Start Menu
 
-### First-Run Notice
+> **First launch:** CleanSpot isn't code-signed yet, so Windows may show a SmartScreen warning.
+> Click **More info → Run anyway** — this is expected for new, unsigned apps.
 
-CleanSpot is not yet code-signed, so Windows SmartScreen may show a warning on first launch:
+**Requirements:** Windows 10 (1809) or later, 64-bit · Administrator rights
 
-1. Click **More info**
-2. Click **Run anyway**
+<br/>
 
-This is expected for unsigned applications. You can verify the file is safe using the VirusTotal link below.
+## 🎯 Quick Start
 
+1. Launch CleanSpot — it will request administrator access
+2. Review the cleaning targets; common-safe ones are enabled by default
+3. Click **SCAN ONLY** to preview, or **TURBO CLEAN** to clean now
+4. Explore the **Disk Analyzer**, **Uninstaller** and **Repair** tabs
 
-## Usage
+<br/>
 
-1. Launch CleanSpot (it will request administrator access)
-2. Review the cleaning targets — eight common-safe targets are enabled by default
-3. Click **SCAN ONLY** to see reclaimable space, or **TURBO CLEAN** to clean immediately
-4. Use **FLUSH RAM** to free memory, or the footer buttons for the Uninstaller and PC Specs
+## 🛡️ Safety
 
-## Disclaimer
+- **Open source** — the released build can be reproduced from this code
+- Every clean, uninstall and delete is written to a **daily log** (`%LOCALAPPDATA%\CleanSpot\logs`)
+- A **system restore point** can be created before uninstalling programs
+- Disk Analyzer deletes go to the **Recycle Bin**, not permanent deletion
 
-CleanSpot performs system-level operations including file deletion and registry modification. While designed to be safe, always review your selected targets before cleaning. The deep uninstall feature permanently removes program data and cannot be undone. Use at your own discretion.
+> CleanSpot performs system-level operations including file deletion and registry changes.
+> Always review your selected targets before cleaning. Deep uninstall permanently removes program data.
+
+<br/>
+
+## 💛 Support
+
+CleanSpot is free and always will be. If it saved you some space or headaches, you can support its development:
+
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/ncp/payment/RZPR585EB3T38)
+
+Found a bug or have an idea? [**Open an issue**](../../issues) — feedback is always welcome.
+
+<br/>
 
 ---
 

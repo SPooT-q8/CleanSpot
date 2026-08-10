@@ -15,7 +15,9 @@
 
 <br/>
 
-[**⬇ &nbsp; Download Latest Release**](../../releases/latest)
+CleanSpot is free and always will be. If it saved you some space or headaches, you can support its development:
+
+<a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal" alt="Donate with PayPal"/></a>
 
 <br/>
 
@@ -83,11 +85,9 @@ Built for gamers and power users. Now in **Arabic and English**.
 
 ## 💛 Support
 
-CleanSpot is free and always will be. If it saved you some space or headaches, you can support its development:
-
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/ncp/payment/RZPR585EB3T38)
-
 Found a bug or have an idea? [**Open an issue**](../../issues) — feedback is always welcome.
+
+If you'd like to support development, there's a <a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener">PayPal donate button</a> at the top. Thank you 🙏
 
 <br/>
 

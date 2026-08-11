@@ -13,6 +13,8 @@
 [![Language](https://img.shields.io/badge/EN%20%2F%20عربي-6E46C8?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/price-Free-3ECF8E?style=for-the-badge)]()
 
+[![Verified by Microsoft](https://img.shields.io/badge/✓%20Verified%20not%20malware-by%20Microsoft-3DD68C?style=for-the-badge)](../../releases/latest)
+
 <br/>
 
 CleanSpot is free and always will be. If it saved you some space or headaches, you can support its development:
@@ -51,7 +53,7 @@ Built for gamers and power users. Now in **Arabic and English**.
 
 ## 🚀 Installation
 
-1. Download **`CleanSpot_Setup_v2.0.exe`** from the [Releases page](../../releases/latest)
+1. Download **`CleanSpot_Setup_v2.0.1.exe`** from the [Releases page](../../releases/latest)
 2. Run the installer and follow the steps
 3. Launch CleanSpot from the Start Menu
 

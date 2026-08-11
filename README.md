@@ -8,7 +8,7 @@
 
 **Clean your junk · See what's filling your drive · Repair Windows · Fully remove programs**
 
-[![Version](https://img.shields.io/badge/version-2.0-00D4FF?style=for-the-badge)](../../releases/latest)
+[![Version](https://img.shields.io/badge/version-2.0.1-00D4FF?style=for-the-badge)](../../releases/latest)
 [![Platform](https://img.shields.io/badge/Windows-10%20%2F%2011-0099CC?style=for-the-badge&logo=windows)]()
 [![Language](https://img.shields.io/badge/EN%20%2F%20عربي-6E46C8?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/price-Free-3ECF8E?style=for-the-badge)]()

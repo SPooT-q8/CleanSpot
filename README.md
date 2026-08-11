@@ -21,7 +21,7 @@ CleanSpot is free and always will be. If it saved you some space or headaches, y
 
 <br/>
 
-<img src="assets/CleanSpot_v2.0_dashboard.png" width="85%" alt="CleanSpot Dashboard" />
+<img src="assets/CleanSpot_v2.0.1_dashboard.png" width="85%" alt="CleanSpot Dashboard" />
 
 </div>
 

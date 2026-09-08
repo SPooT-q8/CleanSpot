@@ -14,7 +14,21 @@
 [![License](https://img.shields.io/badge/price-Free-3ECF8E?style=for-the-badge)]()
 
 [![Cleared by Microsoft](https://img.shields.io/badge/✓%20Cleared-by%20Microsoft-3DD68C?style=for-the-badge)](assets/microsoft-verdict.png)
-[![See the response](https://img.shields.io/badge/See%20the%20response-E24B4B?style=for-the-badge)](assets/microsoft-verdict.png)
+
+<details>
+<summary><img src="https://img.shields.io/badge/See%20the%20response-E24B4B?style=for-the-badge" alt="See the response"></summary>
+<br>
+
+> After review, one or more files from submission were confirmed to be
+> incorrectly blocked by Smart App Control. This has now been remediated,
+> and the file(s) will no longer be blocked.
+
+<img src="assets/microsoft-verdict.png" width="100%" alt="Microsoft security response"/>
+
+CleanSpot is not code-signed yet, so Windows SmartScreen may still warn on first
+launch — click **More info** → **Run anyway**.
+
+</details>
 
 <br/>
 

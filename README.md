@@ -32,22 +32,22 @@ CleanSpot is free and always will be. If it saved you some space or headaches, y
 **[Dashboard](#-dashboard)** · **[Startup](#-startup-manager)** · **[Uninstaller](#-uninstaller)** · **[Repair](#-system-repair)** · **[Disk](#-disk-analyzer)** · **[Specs](#-pc-specs)**
 
 ### 📊 Dashboard
-<img src="assets/screens/dashboard.png" width="100%"/>
+<img src="assets/dashboard.png" width="100%"/>
 
 ### ⚡ Startup Manager
-<img src="assets/screens/startup.png" width="100%"/>
+<img src="assets/startup.png" width="100%"/>
 
 ### 🗑 Uninstaller
-<img src="assets/screens/uninstaller.png" width="100%"/>
+<img src="assets/uninstaller.png" width="100%"/>
 
 ### 🛠 System Repair
-<img src="assets/screens/repair.png" width="100%"/>
+<img src="assets/repair.png" width="100%"/>
 
 ### ◫ Disk Analyzer
-<img src="assets/screens/disk.png" width="100%"/>
+<img src="assets/disk.png" width="100%"/>
 
 ### 📋 PC Specs
-<img src="assets/screens/specs.png" width="100%"/>
+<img src="assets/specs.png" width="100%"/>
 
 ## Why CleanSpot?
 

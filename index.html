@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CleanSpot — Clean. Analyze. Repair.</title>
+<meta name="description" content="CleanSpot is a free, open-source all-in-one PC optimizer for Windows. Clean junk, see what's filling your drive, repair system files, and fully remove programs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#000000;
+    --panel:#0c0c0c;
+    --line:#1c1c1c;
+    --ink:#f4f6f8;
+    --dim:#8b8b8b;
+    --cy:#00D4FF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Sora',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+
+  /* nav */
+  nav{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;max-width:1040px;margin:0 auto;}
+  .nb{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;letter-spacing:-.01em;}
+  .nb img{width:26px;height:26px;border-radius:7px;}
+  .nlinks{display:flex;align-items:center;gap:20px;font-size:.9rem;}
+  .nlinks a.dim{color:var(--dim);}
+  .nlinks a.dim:hover{color:var(--cy);}
+  .pill{display:inline-flex;align-items:center;gap:8px;border-radius:100px;padding:9px 18px;font-weight:600;font-size:.9rem;cursor:pointer;transition:transform .15s;}
+  .pill.solid{background:var(--cy);color:#001318;}
+  .pill.solid:hover{transform:translateY(-1px);}
+  .pill.ghost{border:1px solid var(--line);color:var(--ink);}
+  .pill.ghost:hover{border-color:var(--cy);color:var(--cy);}
+
+  /* hero */
+  .hero{position:relative;text-align:center;padding:56px 0 28px;}
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background-image:radial-gradient(#ffffff0d 1px,transparent 1px);
+    background-size:22px 22px;
+    -webkit-mask-image:radial-gradient(ellipse 60% 70% at 50% 30%,#000 40%,transparent 75%);
+            mask-image:radial-gradient(ellipse 60% 70% at 50% 30%,#000 40%,transparent 75%);
+  }
+  .logo{width:96px;height:96px;border-radius:24px;background:#0b1a1f;border:1px solid #123039;
+        display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+  .logo img{width:64px;height:64px;}
+  h1{font-size:clamp(3rem,9vw,6rem);font-weight:800;letter-spacing:-.04em;line-height:.95;}
+  h1 .dot{color:var(--cy);}
+  .ver{display:inline-block;margin-top:16px;border:1px solid var(--line);border-radius:100px;
+       padding:5px 15px;font-size:.82rem;color:var(--cy);}
+  .tag{max-width:520px;margin:18px auto 0;color:var(--dim);font-size:1.05rem;}
+  .cta{display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap;}
+
+  /* shot + gallery */
+  .shotwrap{margin:40px auto 0;max-width:920px;padding:0 24px;}
+  .shot{position:relative;border-radius:16px;border:1px solid var(--line);overflow:hidden;
+        box-shadow:0 40px 120px -50px #00d4ff33, 0 30px 60px -30px #000;background:var(--panel);}
+  /* الصور مكدّسة فوق بعض. الأولى ترسم الارتفاع (position:relative)،
+     والباقي مطلقة فوقها. الظاهرة فقط لها opacity:1 */
+  .shot img{display:block;width:100%;position:absolute;inset:0;opacity:0;
+            transition:opacity .25s ease;}
+  .shot img:first-of-type{position:relative;}
+  .shot img.on{opacity:1;}
+
+  /* أسهم التنقل */
+  .arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;
+         width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+         background:#000000cc;color:var(--ink);font-size:1.3rem;line-height:1;
+         display:flex;align-items:center;justify-content:center;cursor:pointer;
+         transition:background .15s,border-color .15s,color .15s;backdrop-filter:blur(6px);}
+  .arrow:hover{background:var(--cy);border-color:var(--cy);color:#001318;}
+  .arrow:focus-visible{outline:2px solid var(--cy);outline-offset:3px;}
+  .arrow.prev{left:14px;} .arrow.next{right:14px;}
+
+  /* شريط التبويبات */
+  .tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:18px auto 0;max-width:920px;padding:0 24px;}
+  .tabs button{font-family:'Sora',sans-serif;font-size:.82rem;font-weight:600;color:var(--dim);
+               background:var(--panel);border:1px solid var(--line);border-radius:100px;
+               padding:8px 16px;cursor:pointer;transition:color .15s,border-color .15s;}
+  .tabs button:hover{color:var(--ink);}
+  .tabs button[aria-selected="true"]{color:var(--cy);border-color:var(--cy);}
+  .tabs button:focus-visible{outline:2px solid var(--cy);outline-offset:2px;}
+
+  .caption{text-align:center;margin-top:12px;color:var(--dim);font-size:.84rem;}
+  .caption .mono{color:var(--cy);}
+
+  @media(prefers-reduced-motion:reduce){
+    .shot img{transition:none;}
+  }
+
+  /* features strip */
+  .feat{max-width:1040px;margin:64px auto 0;padding:0 24px;}
+  .feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .fcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 18px;}
+  .fcard .ix{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--cy);}
+  .fcard h3{font-size:1.02rem;font-weight:700;margin:10px 0 6px;letter-spacing:-.01em;}
+  .fcard p{font-size:.86rem;color:var(--dim);line-height:1.5;}
+
+  /* strip of quick badges */
+  .verified{display:inline-flex;align-items:center;gap:6px;margin-top:22px;
+            font-family:'JetBrains Mono',monospace;font-size:.78rem;font-weight:500;
+            color:#3DD68C;border:1px solid #163a2a;background:#0a1611;
+            border-radius:100px;padding:7px 15px;cursor:pointer;
+            transition:border-color .15s,background .15s;}
+  .verified:hover{border-color:#3DD68C;background:#0d1f17;}
+  .verified .look{color:#2a7d5b;font-size:.72rem;}
+
+  /* نافذة إثبات رد مايكروسوفت */
+  dialog.proof{border:1px solid var(--line);border-radius:16px;background:var(--panel);
+               color:var(--ink);padding:0;max-width:min(920px,92vw);width:100%;}
+  dialog.proof::backdrop{background:#000000cc;backdrop-filter:blur(3px);}
+  dialog.proof img{display:block;width:100%;border-radius:0;}
+  .proof-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);}
+  .proof-head h3{font-size:1rem;font-weight:700;letter-spacing:-.01em;}
+  .proof-head button{margin-left:auto;background:none;border:1px solid var(--line);
+                     color:var(--dim);border-radius:8px;width:30px;height:30px;
+                     font-size:1rem;cursor:pointer;line-height:1;}
+  .proof-head button:hover{border-color:var(--cy);color:var(--cy);}
+  .proof-note{padding:14px 20px 20px;color:var(--dim);font-size:.84rem;line-height:1.6;}
+  .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--dim);
+         border:1px solid var(--line);border-radius:7px;padding:6px 11px;background:var(--panel);}
+  .badge b{color:var(--cy);}
+
+  /* cta band */
+  .band{margin:72px auto 0;max-width:1040px;padding:0 24px;}
+  .band-in{border:1px solid var(--line);border-radius:20px;padding:48px 24px;text-align:center;
+           background:radial-gradient(ellipse at 50% 0%,#00d4ff12,transparent 60%);}
+  .band-in h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;letter-spacing:-.03em;}
+  .band-in p{color:var(--dim);margin:12px 0 26px;}
+
+  footer{margin-top:56px;border-top:1px solid var(--line);}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+               padding-top:28px;padding-bottom:40px;color:var(--dim);font-size:.84rem;}
+  footer a:hover{color:var(--cy);}
+
+  @media(max-width:760px){
+    .nlinks a.dim{display:none;}
+    .feat-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nb">
+    <img src="https://github.com/SPooT-q8/CleanSpot/raw/main/assets/logo.png" alt="CleanSpot">
+    CleanSpot
+  </div>
+  <div class="nlinks">
+    <a class="dim" href="#features">Features</a>
+    <a class="dim" href="https://github.com/SPooT-q8/CleanSpot">GitHub</a>
+    <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/download/v2.1/CleanSpot_Setup_v2.1.exe">Download</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo"><img src="https://github.com/SPooT-q8/CleanSpot/raw/main/assets/logo.png" alt="CleanSpot logo"></div>
+    <h1>CleanSpot<span class="dot">.</span></h1>
+    <div class="ver mono">v2.1 · Windows 10 / 11 · Free</div>
+    <p class="tag">Clean the junk. See what's filling your drive. Repair Windows. Remove programs to the last file — one app.</p>
+    <div class="cta">
+      <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/download/v2.1/CleanSpot_Setup_v2.1.exe">↓ &nbsp;Download for Windows</a>
+      <a class="pill ghost" href="https://github.com/SPooT-q8/CleanSpot">View source</a>
+    </div>
+    <button class="verified" id="proofBtn">✓ &nbsp;Cleared by Microsoft &nbsp;<span class="look">— see the response</span></button>
+    <div class="badges">
+      <span class="badge">Open source</span>
+      <span class="badge"><b>21</b> cleaning targets</span>
+      <span class="badge">EN / عربي</span>
+      <span class="badge">No ads · no bloat</span>
+    </div>
+  </div>
+</header>
+
+<div class="shotwrap">
+  <div class="shot" id="gallery">
+    <img class="on" src="assets/dashboard.png"   alt="Dashboard — cleaning targets and live hardware">
+    <img            src="assets/startup.png"     alt="Startup Manager — everything that starts with Windows">
+    <img            src="assets/uninstaller.png" alt="Uninstaller — full removal including leftovers">
+    <img            src="assets/repair.png"      alt="System Repair — SFC and DISM">
+    <img            src="assets/disk.png"        alt="Disk Analyzer — treemap, duplicates and big files">
+    <img            src="assets/specs.png"       alt="PC Specs — full hardware report">
+    <button class="arrow prev" id="prev" aria-label="Previous screenshot">‹</button>
+    <button class="arrow next" id="next" aria-label="Next screenshot">›</button>
+  </div>
+</div>
+
+<div class="tabs" id="tabs" role="tablist" aria-label="Screenshots">
+  <button role="tab" aria-selected="true">Dashboard</button>
+  <button role="tab" aria-selected="false">Startup</button>
+  <button role="tab" aria-selected="false">Uninstaller</button>
+  <button role="tab" aria-selected="false">Repair</button>
+  <button role="tab" aria-selected="false">Disk Analyzer</button>
+  <button role="tab" aria-selected="false">PC Specs</button>
+</div>
+
+<p class="caption"><span class="mono" id="counter">1 / 6</span> &nbsp;·&nbsp; use ← → keys</p>
+
+<section class="feat" id="features">
+  <div class="feat-grid">
+    <div class="fcard">
+      <div class="ix">01</div>
+      <h3>Disk Analyzer</h3>
+      <p>A treemap of every folder, plus a duplicate finder verified with full SHA-256.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">02</div>
+      <h3>Deep Uninstall</h3>
+      <p>Removes files, AppData, registry keys, services — waits for Steam &amp; Epic.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">03</div>
+      <h3>System Repair</h3>
+      <p>SFC and DISM with real results, plus component-store cleanup.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">04</div>
+      <h3>Live monitor</h3>
+      <p>Real-time CPU, GPU, RAM and disk — speeds and temperatures at a glance.</p>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="band-in">
+    <h2>Free. Open source. Yours.</h2>
+    <p>No subscriptions, no telemetry — just a cleaner, faster PC.</p>
+    <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/latest">↓ &nbsp;Download CleanSpot</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>CleanSpot · © 2026 SPooT</div>
+    <div style="display:flex;gap:22px;">
+      <a href="https://github.com/SPooT-q8/CleanSpot">GitHub</a>
+      <a href="https://github.com/SPooT-q8/CleanSpot/issues">Issues</a>
+      <a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener">Support</a>
+    </div>
+  </div>
+</footer>
+
+<dialog class="proof" id="proof">
+  <div class="proof-head">
+    <h3>Microsoft security response</h3>
+    <button id="proofClose" aria-label="Close">✕</button>
+  </div>
+  <img src="assets/microsoft-verdict.png" alt="Microsoft confirming CleanSpot was incorrectly blocked and has been remediated">
+  <p class="proof-note">
+    Submitted to Microsoft Security Intelligence for review. The submission ID and
+    email address are redacted. CleanSpot is not code-signed yet, so Windows
+    SmartScreen may still warn on first launch — click <b>More info</b> → <b>Run anyway</b>.
+  </p>
+</dialog>
+
+<script>
+(function () {
+  var dlg = document.getElementById('proof');
+  document.getElementById('proofBtn').addEventListener('click', function () {
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
+  });
+  document.getElementById('proofClose').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+})();
+
+(function () {
+  var shots   = Array.prototype.slice.call(document.querySelectorAll('#gallery img'));
+  var tabs    = Array.prototype.slice.call(document.querySelectorAll('#tabs button'));
+  var counter = document.getElementById('counter');
+  var i = 0;
+
+  function show(n) {
+    i = (n + shots.length) % shots.length;
+    shots.forEach(function (img, k) { img.classList.toggle('on', k === i); });
+    tabs.forEach(function (btn, k) { btn.setAttribute('aria-selected', k === i); });
+    counter.textContent = (i + 1) + ' / ' + shots.length;
+  }
+
+  document.getElementById('prev').addEventListener('click', function () { show(i - 1); });
+  document.getElementById('next').addEventListener('click', function () { show(i + 1); });
+  tabs.forEach(function (btn, k) {
+    btn.addEventListener('click', function () { show(k); });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft')  show(i - 1);
+    if (e.key === 'ArrowRight') show(i + 1);
+  });
+
+  // سحب بالإصبع على الجوال
+  var x0 = null;
+  var g = document.getElementById('gallery');
+  g.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, {passive:true});
+  g.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 45) show(dx < 0 ? i + 1 : i - 1);
+    x0 = null;
+  }, {passive:true});
+
+  show(0);
+})();
+</script>
+
+</body>
+</html>

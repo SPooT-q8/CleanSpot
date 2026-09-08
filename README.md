@@ -26,7 +26,38 @@ CleanSpot is free and always will be. If it saved you some space or headaches, y
 <img src="assets/CleanSpot_v2.0.1_dashboard.png" width="85%" alt="CleanSpot Dashboard" />
 
 </div>
+---
+## Screenshots
 
+<details open>
+<summary><b>📊 Dashboard</b></summary>
+<img src="assets/screens/dashboard.png" width="100%"/>
+</details>
+
+<details>
+<summary><b>⚡ Startup Manager</b></summary>
+<img src="assets/screens/startup.png" width="100%"/>
+</details>
+
+<details>
+<summary><b>◫ Disk Analyzer</b></summary>
+<img src="assets/screens/disk.png" width="100%"/>
+</details>
+
+<details>
+<summary><b>🗑 Uninstaller</b></summary>
+<img src="assets/screens/uninstaller.png" width="100%"/>
+</details>
+
+<details>
+<summary><b>🛠 System Repair</b></summary>
+<img src="assets/screens/repair.png" width="100%"/>
+</details>
+
+<details>
+<summary><b>📋 PC Specs</b></summary>
+<img src="assets/screens/specs.png" width="100%"/>
+</details>
 ---
 
 ## Why CleanSpot?

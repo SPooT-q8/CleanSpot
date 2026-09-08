@@ -29,36 +29,25 @@ CleanSpot is free and always will be. If it saved you some space or headaches, y
 ---
 ## Screenshots
 
-<details open>
-<summary><b>📊 Dashboard</b></summary>
-<img src="assets/dashboard.png" width="100%"/>
-</details>
+**[Dashboard](#-dashboard)** · **[Startup](#-startup-manager)** · **[Uninstaller](#-uninstaller)** · **[Repair](#-system-repair)** · **[Disk](#-disk-analyzer)** · **[Specs](#-pc-specs)**
 
-<details>
-<summary><b>⚡ Startup Manager</b></summary>
-<img src="assets/startup.png" width="100%"/>
-</details>
+### 📊 Dashboard
+<img src="assets/screens/dashboard.png" width="100%"/>
 
-<details>
-<summary><b>◫ Disk Analyzer</b></summary>
-<img src="assets/disk.png" width="100%"/>
-</details>
+### ⚡ Startup Manager
+<img src="assets/screens/startup.png" width="100%"/>
 
-<details>
-<summary><b>🗑 Uninstaller</b></summary>
-<img src="assets/uninstaller.png" width="100%"/>
-</details>
+### 🗑 Uninstaller
+<img src="assets/screens/uninstaller.png" width="100%"/>
 
-<details>
-<summary><b>🛠 System Repair</b></summary>
-<img src="assets/repair.png" width="100%"/>
-</details>
+### 🛠 System Repair
+<img src="assets/screens/repair.png" width="100%"/>
 
-<details>
-<summary><b>📋 PC Specs</b></summary>
-<img src="assets/specs.png" width="100%"/>
-</details>
----
+### ◫ Disk Analyzer
+<img src="assets/screens/disk.png" width="100%"/>
+
+### 📋 PC Specs
+<img src="assets/screens/specs.png" width="100%"/>
 
 ## Why CleanSpot?
 

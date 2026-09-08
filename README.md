@@ -13,7 +13,7 @@
 [![Language](https://img.shields.io/badge/EN%20%2F%20عربي-6E46C8?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/price-Free-3ECF8E?style=for-the-badge)]()
 
-[![Verified by Microsoft](https://img.shields.io/badge/✓%20Verified%20not%20malware-by%20Microsoft-3DD68C?style=for-the-badge)](../../releases/latest)
+[![Verified by Microsoft](https://img.shields.io/badge/✓%20Verified%20not%20malware-by%20Microsoft-3DD68C?style=for-the-badge)](../../assets/microsoft-verdict.png)
 
 <br/>
 

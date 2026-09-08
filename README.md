@@ -16,8 +16,7 @@
 [![Cleared by Microsoft](https://img.shields.io/badge/✓%20Cleared-by%20Microsoft-3DD68C?style=for-the-badge)](assets/microsoft-verdict.png)
 
 <details>
-<summary><img src="https://img.shields.io/badge/See%20the%20response-E24B4B?style=for-the-badge" alt="See the response"></summary>
-<br>
+<summary><b>See the Microsoft response</b></summary><br>
 
 > After review, one or more files from submission were confirmed to be
 > incorrectly blocked by Smart App Control. This has now been remediated,

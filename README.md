@@ -8,7 +8,7 @@
 
 **Clean your junk · See what's filling your drive · Repair Windows · Fully remove programs**
 
-[![Version](https://img.shields.io/badge/version-2.1-00D4FF?style=for-the-badge)](../../releases/latest)
+[![Version](https://img.shields.io/badge/version-2.2-00D4FF?style=for-the-badge)](../../releases/latest)
 [![Platform](https://img.shields.io/badge/Windows-10%20%2F%2011-0099CC?style=for-the-badge&logo=windows)]()
 [![Language](https://img.shields.io/badge/EN%20%2F%20عربي-6E46C8?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/price-Free-3ECF8E?style=for-the-badge)]()
@@ -22,7 +22,7 @@
 > incorrectly blocked by Smart App Control. This has now been remediated,
 > and the file(s) will no longer be blocked.
 
-<img src="assets/microsoft-verdict.png" width="100%" alt="Microsoft security response"/>
+<img src="assets/submission_redacted.png" width="100%" alt="Microsoft security response"/>
 
 CleanSpot is not code-signed yet, so Windows SmartScreen may still warn on first
 launch — click **More info** → **Run anyway**.

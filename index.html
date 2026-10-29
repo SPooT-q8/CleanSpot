@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CleanSpot — Clean. Analyze. Repair.</title>
-<meta name="description" content="CleanSpot is a free, open-source all-in-one PC optimizer for Windows. Clean junk, see what's filling your drive, repair system files, and fully remove programs.">
+<meta name="description" content="CleanSpot is a free, open-source all-in-one PC optimizer for Windows. Clean junk, see what's filling your drive, manage startup apps, repair system files and your network, and fully remove programs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
   .cta{display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap;}
 
   /* shot + gallery */
-  .shotwrap{margin:40px auto 0;max-width:920px;padding:0 24px;}
+  .shotwrap{margin:16px auto 0;max-width:920px;padding:0 24px;}
   .shot{position:relative;border-radius:16px;border:1px solid var(--line);overflow:hidden;
         box-shadow:0 40px 120px -50px #00d4ff33, 0 30px 60px -30px #000;background:var(--panel);}
   /* الصور مكدّسة فوق بعض. الأولى ترسم الارتفاع (position:relative)،
@@ -85,7 +85,7 @@
   .arrow.prev{left:14px;} .arrow.next{right:14px;}
 
   /* شريط التبويبات */
-  .tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:18px auto 0;max-width:920px;padding:0 24px;}
+  .tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:40px auto 0;max-width:920px;padding:0 24px;}
   .tabs button{font-family:'Sora',sans-serif;font-size:.82rem;font-weight:600;color:var(--dim);
                background:var(--panel);border:1px solid var(--line);border-radius:100px;
                padding:8px 16px;cursor:pointer;transition:color .15s,border-color .15s;}
@@ -170,8 +170,8 @@
   <div class="wrap">
     <div class="logo"><img src="https://github.com/SPooT-q8/CleanSpot/raw/main/assets/logo.png" alt="CleanSpot logo"></div>
     <h1>CleanSpot<span class="dot">.</span></h1>
-    <div class="ver mono">v2.3 · Windows 10 / 11 · Free</div>
-    <p class="tag">Clean the junk. See what's filling your drive. Repair Windows. Remove programs to the last file — one app.</p>
+    <div class="ver mono">v2.4 · Windows 10 / 11 · Free</div>
+    <p class="tag">Clean the junk. See what's filling your drive. Repair Windows and your network. Remove programs to the last file — one app.</p>
     <div class="cta">
       <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/download/v2.3/CleanSpot_Setup_v2.3.exe">↓ &nbsp;Download for Windows</a>
       <a class="pill ghost" href="https://github.com/SPooT-q8/CleanSpot">View source</a>
@@ -179,25 +179,12 @@
     <button class="verified" id="proofBtn">✓ &nbsp;Cleared by Microsoft &nbsp;<span class="look">— see the response</span></button>
     <div class="badges">
       <span class="badge">Open source</span>
-      <span class="badge"><b>21</b> cleaning targets</span>
+      <span class="badge"><b>20+</b> cleaning targets</span>
       <span class="badge">EN / عربي</span>
       <span class="badge">No ads · no bloat</span>
     </div>
   </div>
 </header>
-
-<div class="shotwrap">
-  <div class="shot" id="gallery">
-    <img class="on" src="assets/dashboard.png"   alt="Dashboard — cleaning targets and live hardware">
-    <img            src="assets/startup.png"     alt="Startup Manager — everything that starts with Windows">
-    <img            src="assets/uninstaller.png" alt="Uninstaller — full removal including leftovers">
-    <img            src="assets/repair.png"      alt="System Repair — SFC and DISM">
-    <img            src="assets/disk.png"        alt="Disk Analyzer — treemap, duplicates and big files">
-    <img            src="assets/specs.png"       alt="PC Specs — full hardware report">
-    <button class="arrow prev" id="prev" aria-label="Previous screenshot">‹</button>
-    <button class="arrow next" id="next" aria-label="Next screenshot">›</button>
-  </div>
-</div>
 
 <div class="tabs" id="tabs" role="tablist" aria-label="Screenshots">
   <button role="tab" aria-selected="true">Dashboard</button>
@@ -208,6 +195,21 @@
   <button role="tab" aria-selected="false">PC Specs</button>
 </div>
 
+<div class="shotwrap">
+  <div class="shot" id="gallery">
+    <img class="on" src="assets/cleanspot-dashboard.png" alt="Dashboard — cleaning targets and live hardware">
+    <img            src="assets/cleanspot-startup.png" alt="Startup Manager — everything that starts with Windows">
+    <img            src="assets/cleanspot-uninstaller.png" alt="Uninstaller — full removal including leftovers">
+    <img            src="assets/cleanspot-repair.png" alt="System Repair — SFC, DISM and network repair">
+    <img            src="assets/cleanspot-disk-analyzer.png" alt="Disk Analyzer — treemap, duplicates and big files">
+    <img            src="assets/cleanspot-pc-specs.png" alt="PC Specs — full hardware report and Restart to BIOS">
+    <button class="arrow prev" id="prev" aria-label="Previous screenshot">‹</button>
+    <button class="arrow next" id="next" aria-label="Next screenshot">›</button>
+  </div>
+</div>
+
+
+
 <p class="caption"><span class="mono" id="counter">1 / 6</span> &nbsp;·&nbsp; use ← → keys</p>
 
 <section class="feat" id="features">
@@ -215,22 +217,42 @@
     <div class="fcard">
       <div class="ix">01</div>
       <h3>Disk Analyzer</h3>
-      <p>A treemap of every folder, plus a duplicate finder verified with full SHA-256.</p>
+      <p>A treemap of every folder, a SHA-256 duplicate finder, and big files — system files are never offered for deletion.</p>
     </div>
     <div class="fcard">
       <div class="ix">02</div>
+      <h3>Startup Manager</h3>
+      <p>Everything that launches with Windows, including hidden Task Scheduler entries. Switch it off, or back on, anytime.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">03</div>
       <h3>Deep Uninstall</h3>
       <p>Removes files, AppData, registry keys, services — waits for Steam &amp; Epic.</p>
     </div>
     <div class="fcard">
-      <div class="ix">03</div>
+      <div class="ix">04</div>
       <h3>System Repair</h3>
       <p>SFC and DISM with real results, plus component-store cleanup.</p>
     </div>
     <div class="fcard">
-      <div class="ix">04</div>
+      <div class="ix">05</div>
+      <h3>Network Repair</h3>
+      <p>Quick fix or a full network reset when the internet misbehaves — one click.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">06</div>
+      <h3>PC Specs</h3>
+      <p>Every component at a glance, one-click copy, a full report — and restart straight into your BIOS.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">07</div>
       <h3>Live monitor</h3>
-      <p>Real-time CPU, GPU, RAM and disk — speeds and temperatures at a glance.</p>
+      <p>Real-time CPU, GPU, RAM and disk — clock speeds, NVIDIA GPU temperature and a tray alert.</p>
+    </div>
+    <div class="fcard">
+      <div class="ix">08</div>
+      <h3>Sharp on any screen</h3>
+      <p>Crisp at 100% to 150%+ scaling, Windows icons throughout, 8 accent colours, dark &amp; light.</p>
     </div>
   </div>
 </section>

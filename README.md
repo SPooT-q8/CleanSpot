@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="assets/readme/hero.svg" width="100%" alt="CleanSpot — Maximum performance. Zero bloat. v2.4 for Windows 10 / 11, free."/>
+<img src="assets/hero.svg" width="100%" alt="CleanSpot — Maximum performance. Zero bloat. v2.4 for Windows 10 / 11, free."/>
 
 <br><br>
 
-<a href="../../releases/latest"><img src="assets/readme/btn-download.svg" height="52" alt="Download v2.4"/></a>
+<a href="../../releases/latest"><img src="assets/btn-download.svg" height="52" alt="Download v2.4"/></a>
 &nbsp;
-<a href="https://github.com/SPooT-q8/CleanSpot"><img src="assets/readme/btn-source.svg" height="52" alt="View source"/></a>
+<a href="https://github.com/SPooT-q8/CleanSpot"><img src="assets/btn-source.svg" height="52" alt="View source"/></a>
 
 <br><br>
 
-<a href="assets/microsoft-verdict.png"><img src="assets/readme/badge-microsoft.svg" height="44" alt="Cleared by Microsoft"/></a>
+<a href="assets/microsoft-verdict.png"><img src="assets/badge-microsoft.svg" height="44" alt="Cleared by Microsoft"/></a>
 
 </div>
 
@@ -31,31 +31,31 @@
 
 <div align="center">
 CleanSpot is free and always will be. If it optimized your rig, support the dev:<br><br>
-<a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><img src="assets/readme/btn-paypal.svg" height="52" alt="Support via PayPal"/></a>
+<a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><img src="assets/btn-paypal.svg" height="52" alt="Support via PayPal"/></a>
 </div>
 
 <br>
 
-<img src="assets/readme/h-modules.svg" width="100%" alt="01 — MODULES_OVERVIEW"/>
+<img src="assets/h-modules.svg" width="100%" alt="01 — MODULES_OVERVIEW"/>
 
 <table>
   <tr>
-    <td width="50%"><img src="assets/readme/shot-dashboard.png" width="100%" alt="Dashboard"/></td>
-    <td width="50%"><img src="assets/readme/shot-startup.png" width="100%" alt="Startup Manager"/></td>
+    <td width="50%"><img src="assets/shot-dashboard.png" width="100%" alt="Dashboard"/></td>
+    <td width="50%"><img src="assets/shot-startup.png" width="100%" alt="Startup Manager"/></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/readme/shot-uninstaller.png" width="100%" alt="Uninstaller"/></td>
-    <td width="50%"><img src="assets/readme/shot-repair.png" width="100%" alt="System Repair"/></td>
+    <td width="50%"><img src="assets/shot-uninstaller.png" width="100%" alt="Uninstaller"/></td>
+    <td width="50%"><img src="assets/shot-repair.png" width="100%" alt="System Repair"/></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/readme/shot-disk-analyzer.png" width="100%" alt="Disk Analyzer"/></td>
-    <td width="50%"><img src="assets/readme/shot-pc-specs.png" width="100%" alt="PC Specs"/></td>
+    <td width="50%"><img src="assets/shot-disk-analyzer.png" width="100%" alt="Disk Analyzer"/></td>
+    <td width="50%"><img src="assets/shot-pc-specs.png" width="100%" alt="PC Specs"/></td>
   </tr>
 </table>
 
 <br>
 
-<img src="assets/readme/h-why.svg" width="100%" alt="02 — WHY_CLEANSPOT"/>
+<img src="assets/h-why.svg" width="100%" alt="02 — WHY_CLEANSPOT"/>
 
 Most cleaners just delete temp files and call it a day. CleanSpot goes further — it **shows you what's actually eating your disk**, **repairs a broken Windows install**, and **removes programs down to the last registry key**. One app, seven tabs, no subscriptions, no bloat.
 
@@ -63,9 +63,9 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <br>
 
-<img src="assets/readme/h-features.svg" width="100%" alt="03 — CORE_FEATURES"/>
+<img src="assets/h-features.svg" width="100%" alt="03 — CORE_FEATURES"/>
 
-<img src="assets/readme/features.svg" width="100%" alt="System Cleaning, Disk Analyzer, Startup Manager, Deep Uninstaller, System Repair, Network Repair, PC Specs, Hardware Monitor, Modern Interface, Localization"/>
+<img src="assets/features.svg" width="100%" alt="System Cleaning, Disk Analyzer, Startup Manager, Deep Uninstaller, System Repair, Network Repair, PC Specs, Hardware Monitor, Modern Interface, Localization"/>
 
 <details>
 <summary>Text version</summary>
@@ -88,7 +88,7 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <br>
 
-<img src="assets/readme/h-deploy.svg" width="100%" alt="04 — DEPLOYMENT"/>
+<img src="assets/h-deploy.svg" width="100%" alt="04 — DEPLOYMENT"/>
 
 1. Download **`CleanSpot_Setup_v2.4.exe`** from the [Releases page](../../releases/latest).
 2. Run the installer and follow the steps.
@@ -104,7 +104,7 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <br>
 
-<img src="assets/readme/h-quickstart.svg" width="100%" alt="05 — QUICK_START"/>
+<img src="assets/h-quickstart.svg" width="100%" alt="05 — QUICK_START"/>
 
 1. Launch CleanSpot — it will request administrator access.
 2. Review the cleaning targets; common-safe ones are enabled by default.
@@ -113,7 +113,7 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <br>
 
-<img src="assets/readme/h-safety.svg" width="100%" alt="06 — SYSTEM_SAFETY"/>
+<img src="assets/h-safety.svg" width="100%" alt="06 — SYSTEM_SAFETY"/>
 
 - **Open source** — the released build can be reproduced from this code.
 - Every clean, uninstall and delete is written to a **daily log** (`%LOCALAPPDATA%\CleanSpot\logs`).
@@ -125,16 +125,16 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <br>
 
-<img src="assets/readme/h-support.svg" width="100%" alt="07 — COMM_LINK & SUPPORT"/>
+<img src="assets/h-support.svg" width="100%" alt="07 — COMM_LINK & SUPPORT"/>
 
 Found a bug or have an idea? Feedback is always welcome — and if CleanSpot helped, a small donation keeps development going. Thank you.
 
 <div align="center">
-<a href="../../issues"><img src="assets/readme/btn-issue.svg" height="52" alt="Open an issue"/></a>
+<a href="../../issues"><img src="assets/btn-issue.svg" height="52" alt="Open an issue"/></a>
 &nbsp;
-<a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><img src="assets/readme/btn-paypal.svg" height="52" alt="Support via PayPal"/></a>
+<a href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><img src="assets/btn-paypal.svg" height="52" alt="Support via PayPal"/></a>
 </div>
 
 <br>
 
-<img src="assets/readme/footer.svg" width="100%" alt="CleanSpot · Power All-in-One · © 2026 SPooT · All Rights Reserved"/>
+<img src="assets/footer.svg" width="100%" alt="CleanSpot · Power All-in-One · © 2026 SPooT · All Rights Reserved"/>

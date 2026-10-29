@@ -11,7 +11,7 @@
 <br><br>
 
 <details>
-<summary><img src="assets/badge-microsoft.svg" height="44" alt="Cleared by Microsoft"/></summary>
+<summary><img src="assets/badge-cleared.svg" height="44" alt="Cleared by Microsoft"/></summary>
 <br>
 <img src="assets/submission_redacted.png" width="100%" alt="Microsoft security response"/>
 </details>

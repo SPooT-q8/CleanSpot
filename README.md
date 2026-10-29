@@ -10,9 +10,9 @@
 
 <br><br>
 
-<a href="assets/submission_redacted.png"><img src="assets/badge-ms.svg" height="44" alt="Cleared by Microsoft"/></a>
+<a href="assets/ms-verdict-v24-final.png"><img src="assets/badge-ms.svg" height="44" alt="Cleared by Microsoft"/></a>
 <br><br>
-<a href="assets/submission_redacted.png"><img src="assets/submission_redacted.png" width="360" alt="Microsoft security response — click to enlarge"/></a>
+<a href="assets/ms-verdict-v24-final.png"><img src="assets/ms-verdict-v24-final.png" width="360" alt="Microsoft security response — click to enlarge"/></a>
 
 </div>
 

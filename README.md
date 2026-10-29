@@ -127,7 +127,7 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <img src="assets/readme/h-support.svg" width="100%" alt="07 — COMM_LINK & SUPPORT"/>
 
-Found a bug or have an idea? Feedback is always welcome. If you'd like to support development, the PayPal button is at the top — thank you.
+Found a bug or have an idea? Feedback is always welcome — and if CleanSpot helped, a small donation keeps development going. Thank you.
 
 <div align="center">
 <a href="../../issues"><img src="assets/readme/btn-issue.svg" height="52" alt="Open an issue"/></a>

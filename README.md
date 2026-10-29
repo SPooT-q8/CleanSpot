@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="CleanSpot — Maximum performance. Zero bloat. v2.4 for Windows 10 / 11, free."/>
+<img src="assets/hero.svg" width="100%" alt="CleanSpot — Maximum performance. Zero bloat. v2.4 for Windows 10 and 11, free."/>
 
 <br><br>
 
@@ -10,22 +10,13 @@
 
 <br><br>
 
-<a href="assets/microsoft-verdict.png"><img src="assets/badge-microsoft.svg" height="44" alt="Cleared by Microsoft"/></a>
+<details>
+<summary><img src="assets/badge-microsoft.svg" height="44" alt="Cleared by Microsoft"/></summary>
+<br>
+<img src="assets/submission_redacted.png" width="100%" alt="Microsoft security response"/>
+</details>
 
 </div>
-
-<details>
-<summary><b>SYS_LOG: Microsoft Security Response</b></summary>
-<br>
-
-> After review, one or more files from submission were confirmed to be
-> incorrectly blocked by Smart App Control. This has now been remediated,
-> and the file(s) will no longer be blocked.
-
-<img src="assets/submission_redacted.png" width="100%" alt="Microsoft security response"/>
-
-*Note: CleanSpot is not code-signed yet, so Windows SmartScreen may still warn on first launch — click **More info** → **Run anyway**.*
-</details>
 
 <br>
 
@@ -81,7 +72,7 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 | **Network Repair** | Quick fix (flush DNS, renew IP) or a full network reset when the internet misbehaves — with a restart prompt when it's needed. |
 | **PC Specs** | Every component at a glance — copy any value with one click, export a full report, or **restart straight into your BIOS**. |
 | **Hardware Monitor** | Live CPU, GPU, RAM and disk usage with clock speeds, NVIDIA GPU temperature, and a temperature alert in the tray where the board supports it. |
-| **Modern Interface** | Crisp at any Windows scaling, Windows icons throughout, and 8 accent colours with dark / light themes — all remembered between sessions. |
+| **Modern Interface** | Crisp at any Windows scaling, Windows icons throughout, and 8 accent colours with dark and light themes — all remembered between sessions. |
 | **Localization** | Full right-to-left Arabic, switchable anytime with one click. |
 
 </details>
@@ -95,10 +86,10 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 3. Launch CleanSpot from the desktop shortcut or the Start Menu.
 
 > [!NOTE]
-> **SYS_UPDATE:** Already installed? The new version installs over the old one — your settings are kept.
+> **Updating:** Already installed? The new version installs over the old one — your settings are kept.
 
 > [!WARNING]
-> **SECURITY_OVERRIDE:** CleanSpot isn't code-signed yet, so Windows may show a SmartScreen warning. Click **More info → Run anyway** — this is expected for new, unsigned apps.
+> **First launch:** CleanSpot isn't code-signed yet, so Windows may show a SmartScreen warning. Click **More info → Run anyway** — this is expected for new, unsigned apps.
 
 `REQUIREMENTS` Windows 10 (1809) or later, 64-bit · Administrator rights.
 

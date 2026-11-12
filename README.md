@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="CleanSpot — Maximum performance. Zero bloat. v2.4 for Windows 10 and 11, free."/>
+<img src="assets/hero.svg" width="100%" alt="CleanSpot — Maximum performance. Zero bloat. For Windows 10 and 11, free."/>
 
 <br><br>
 
-<a href="../../releases/latest"><img src="assets/btn-download.svg" height="52" alt="Download v2.4"/></a>
+<a href="../../releases/latest"><img src="assets/btn-download.svg" height="52" alt="Download"/></a>
 &nbsp;
 <a href="https://github.com/SPooT-q8/CleanSpot"><img src="assets/btn-source.svg" height="52" alt="View source"/></a>
 
 <br><br>
 
-<a href="assets/ms-verdict-scan.png"><img src="assets/badge-ms.svg" height="44" alt="Cleared by Microsoft"/></a>
+<a href="assets/ms-verdict-scan-v2.5.png"><img src="assets/badge-ms.svg" height="44" alt="Cleared by Microsoft"/></a>
 <br><br>
-<a href="assets/ms-verdict-scan.png"><img src="assets/ms-verdict-scan.png" width="360" alt="Microsoft security response — click to enlarge"/></a>
+<a href="assets/ms-verdict-scan-v2.5.png"><img src="assets/ms-verdict-scan-v2.5.png" width="360" alt="Microsoft security response — click to enlarge"/></a>
 
 </div>
 
@@ -79,7 +79,7 @@ Built for gamers and power users, in **Arabic and English** — and sharp on any
 
 <img src="assets/h-deploy.svg" width="100%" alt="04 — DEPLOYMENT"/>
 
-1. Download **`CleanSpot_Setup_v2.4.exe`** from the [Releases page](../../releases/latest).
+1. Download **`CleanSpot_Setup_v2.5.exe`** from the [Releases page](../../releases/latest).
 2. Run the installer and follow the steps.
 3. Launch CleanSpot from the desktop shortcut or the Start Menu.
 

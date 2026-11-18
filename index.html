@@ -102,6 +102,25 @@
   }
   .pill.ghost:hover { background: #fff; color: #000; }
 
+
+  /* زر الدعم الذهبي — الحد الذهبي بطبقتين لأن clip-path يقص الحدود والظل */
+  .support { display: flex; justify-content: center; margin-top: 18px; filter: drop-shadow(0 0 10px rgba(255, 194, 26, 0.22)); transition: filter 0.2s; }
+  .support:hover { filter: drop-shadow(0 0 14px rgba(255, 194, 26, 0.6)); }
+  .gold-btn {
+    display: inline-block; padding: 1px; background: #ffc21a; cursor: pointer;
+    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+  }
+  .gold-btn span {
+    display: flex; align-items: center; gap: 14px; padding: 13px 28px;
+    background: #0d0a05; color: #ffc21a; font-size: 0.95rem; font-weight: 700;
+    letter-spacing: 3px; text-transform: uppercase; transition: all 0.2s;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+  }
+  .gold-btn i { width: 10px; height: 10px; background: #ffc21a; box-shadow: 0 0 8px rgba(255, 194, 26, 0.8); transition: background 0.2s; }
+  .gold-btn:hover span { background: #ffc21a; color: #0d0a05; }
+  .gold-btn:hover i { background: #0d0a05; box-shadow: none; }
+  .gold-btn:focus-visible { outline: 2px solid #ffc21a; outline-offset: 3px; }
+
   /* hero */
   .hero { position: relative; text-align: center; padding: 80px 0 40px; z-index: 5; }
   .hero::before {
@@ -313,6 +332,9 @@
     <div class="cta">
       <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/download/v2.5.1/CleanSpot_Setup_v2.5.1.exe">↓ INITIALIZE DOWNLOAD</a>
       <a class="pill ghost" href="https://github.com/SPooT-q8/CleanSpot/releases/tag/v2.5.1">WHAT'S NEW</a>
+    </div>
+    <div class="support">
+      <a class="gold-btn mono" href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><span><i></i>SUPPORT VIA PAYPAL</span></a>
     </div>
     <button class="verified" id="proofBtn">✓ SYSTEM CLEARED BY MS <span class="look">— view logs</span></button>
     <div class="badges">

@@ -228,12 +228,34 @@
     display: inline-flex; align-items: center; gap: 8px; margin-top: 30px;
     font-family: 'Chakra Petch', sans-serif; font-size: 0.9rem; font-weight: 600;
     color: #00ff66; border: 1px solid rgba(0,255,102,0.3); background: rgba(0,255,102,0.1);
-    padding: 8px 20px; cursor: pointer; transition: all 0.2s; text-transform: uppercase;
+    padding: 8px 20px; cursor: pointer; transition: all 0.2s; text-transform: none;
     clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
     backdrop-filter: blur(4px);
   }
   .verified:hover { border-color: #00ff66; box-shadow: 0 0 15px rgba(0,255,102,0.2); }
   .verified .look { color: var(--ink); font-size: 0.8rem; font-family: 'Inter', sans-serif; text-transform: none; }
+
+  /* زر التبرع — نفس شكل شارة الإصدار: وردي (SUPPORT) | داكن (PayPal) */
+  .donate-row { margin-top: 16px; }
+  .donate {
+    display: inline-flex; align-items: stretch;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 85, 0.35));
+    transition: transform 0.2s, filter 0.2s;
+  }
+  .donate .l {
+    background: var(--accent); color: #fff;
+    padding: 7px 24px 7px 16px; position: relative; z-index: 1;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+  }
+  .donate .r {
+    background: rgba(20, 20, 28, 0.9); color: #cbd5e1;
+    border: 1px solid var(--line); border-left: none;
+    margin-left: -10px; padding: 7px 16px 7px 22px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .donate:hover { transform: translateY(-2px); filter: drop-shadow(0 0 14px rgba(255, 0, 85, 0.6)); }
+  .donate:hover .r { color: #fff; border-color: var(--accent); }
   
   .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; position: relative; z-index: 5; }
   .badge {
@@ -293,8 +315,8 @@
   footer a { transition: color 0.2s; }
   footer a:hover { color: var(--cy); text-shadow: var(--glow-cy); }
 
-  .pill:focus-visible, .tabs button:focus-visible, .arrow:focus-visible, .verified:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-  @media (prefers-reduced-motion: reduce) { .shot img, .fcard, .pill { transition: none; } .fcard:hover { transform: none; } }
+  .pill:focus-visible, .tabs button:focus-visible, .arrow:focus-visible, .verified:focus-visible, .donate:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { .shot img, .fcard, .pill, .donate { transition: none; } .fcard:hover, .donate:hover { transform: none; } }
   @media(max-width: 900px) { .feat-grid { grid-template-columns: 1fr 1fr; } }
   @media(max-width: 600px) { .nlinks a.dim { display: none; } .feat-grid { grid-template-columns: 1fr; } }
 </style>
@@ -323,7 +345,13 @@
       <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/download/v2.5.1/CleanSpot_Setup_v2.5.1.exe">↓ INITIALIZE DOWNLOAD</a>
       <a class="pill ghost" href="https://github.com/SPooT-q8/CleanSpot/releases/tag/v2.5.1">WHAT'S NEW</a>
     </div>
-    <button class="verified" id="proofBtn">✓ SYSTEM CLEARED BY MS <span class="look">— view logs</span></button>
+    <button class="verified" id="proofBtn">✓ System Cleared By Microsoft <span class="look">— view logs</span></button>
+    <div class="donate-row">
+      <a class="donate" href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener noreferrer"
+         aria-label="Support CleanSpot via PayPal (opens in a new tab)">
+        <span class="l">♥ SUPPORT</span><span class="r">PayPal ↗</span>
+      </a>
+    </div>
     <div class="badges">
       <span class="badge">SYS: Open_Source</span>
       <span class="badge">TARGETS: <b>20+</b></span>

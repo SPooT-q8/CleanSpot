@@ -102,25 +102,6 @@
   }
   .pill.ghost:hover { background: #fff; color: #000; }
 
-
-  /* زر الدعم الذهبي — الحد الذهبي بطبقتين لأن clip-path يقص الحدود والظل */
-  .support { display: flex; justify-content: center; margin-top: 18px; filter: drop-shadow(0 0 10px rgba(255, 194, 26, 0.22)); transition: filter 0.2s; }
-  .support:hover { filter: drop-shadow(0 0 14px rgba(255, 194, 26, 0.6)); }
-  .gold-btn {
-    display: inline-block; padding: 1px; background: #ffc21a; cursor: pointer;
-    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
-  }
-  .gold-btn span {
-    display: flex; align-items: center; gap: 14px; padding: 13px 28px;
-    background: #0d0a05; color: #ffc21a; font-size: 0.95rem; font-weight: 700;
-    letter-spacing: 3px; text-transform: uppercase; transition: all 0.2s;
-    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
-  }
-  .gold-btn i { width: 10px; height: 10px; background: #ffc21a; box-shadow: 0 0 8px rgba(255, 194, 26, 0.8); transition: background 0.2s; }
-  .gold-btn:hover span { background: #ffc21a; color: #0d0a05; }
-  .gold-btn:hover i { background: #0d0a05; box-shadow: none; }
-  .gold-btn:focus-visible { outline: 2px solid #ffc21a; outline-offset: 3px; }
-
   /* hero */
   .hero { position: relative; text-align: center; padding: 80px 0 40px; z-index: 5; }
   .hero::before {
@@ -280,6 +261,15 @@
   .proof-note { padding: 20px; color: var(--dim); font-size: 0.9rem; }
   .proof-note b { color: var(--ink); }
 
+  /* live demo (animated tour of every tab) */
+  .demo { max-width: 780px; margin: 60px auto 0; padding: 0 24px; position: relative; z-index: 5; text-align: center; }
+  .demo-frame { filter: drop-shadow(0 0 22px rgba(0, 240, 255, 0.16)) drop-shadow(0 30px 40px rgba(0, 0, 0, 0.6)); }
+  .demo-frame picture {
+    display: block; border: 1px solid var(--cy); background: var(--panel); overflow: hidden;
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+  }
+  .demo-frame img { display: block; width: 100%; height: auto; }
+
   /* cta band */
   .band { margin: 100px auto 0; max-width: 1100px; padding: 0 24px; position: relative; z-index: 5; }
   .band-in {
@@ -333,9 +323,6 @@
       <a class="pill solid" href="https://github.com/SPooT-q8/CleanSpot/releases/download/v2.5.1/CleanSpot_Setup_v2.5.1.exe">↓ INITIALIZE DOWNLOAD</a>
       <a class="pill ghost" href="https://github.com/SPooT-q8/CleanSpot/releases/tag/v2.5.1">WHAT'S NEW</a>
     </div>
-    <div class="support">
-      <a class="gold-btn mono" href="https://www.paypal.com/ncp/payment/RZPR585EB3T38" target="_blank" rel="noopener"><span><i></i>SUPPORT VIA PAYPAL</span></a>
-    </div>
     <button class="verified" id="proofBtn">✓ SYSTEM CLEARED BY MS <span class="look">— view logs</span></button>
     <div class="badges">
       <span class="badge">SYS: Open_Source</span>
@@ -345,6 +332,16 @@
     </div>
   </div>
 </header>
+
+<section class="demo" id="demo">
+  <div class="demo-frame">
+    <picture>
+      <source srcset="assets/cleanspot-tour.webp" type="image/webp">
+      <img src="assets/cleanspot-tour.gif" width="1080" height="1080" decoding="async"
+           alt="Animated tour of CleanSpot: Dashboard, Uninstaller, System Repair, Startup, Disk Analyzer and PC Specs">
+    </picture>
+  </div>
+</section>
 
 <div class="tabs" id="tabs" role="tablist" aria-label="Screenshots">
   <button role="tab" aria-selected="true">Dashboard</button>
